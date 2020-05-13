@@ -1,3 +1,9 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Elin och Johan"
+
+[[menu.main]]
+    identifier = "home"
+    name       = "Välkomna"
+    url        = "/"
+    weight     = 1

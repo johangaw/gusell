@@ -1,0 +1,23 @@
+.main-nav-container ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 64px;
+}
+
+.nav-item {
+  color: white;
+  margin: 0 16px;
+  list-style: none;
+}
+
+.nav-item a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-item a:hover, .nav-item a:active, .nav-item.active a {
+  color: goldenrod;
+}
