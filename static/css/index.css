@@ -10,6 +10,7 @@
 
 :root {
   --color-font: rgb(43, 43, 43);
+  --phone-upper: 520px
 }
 
 * {

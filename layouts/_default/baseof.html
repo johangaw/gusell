@@ -12,11 +12,12 @@
   <title>{{ block "title" . }}{{ .Page.Title }}{{ end }}</title>
 </head>
 
-<body>
+<body onclick="closeMenu()">
   <div class="background-image"></div>
   <div class="container">
-    <header>
-      <nav class="main-nav-container">
+    <header onclick="event.stopPropagation()">
+      <nav class="main-nav-container" id="nav-container">
+        <button onclick="toggleMenu()">Öppna</button>
         <ul>
           {{ $currentPage := . }}
           {{ range .Site.Menus.main }}
@@ -36,6 +37,16 @@
     <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
     {{ end }}
   </div>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-container').classList.toggle('open')
+    }
+
+    function closeMenu() {
+      document.getElementById('nav-container').classList.remove('open')
+    }
+  </script>
 </body>
 
 </html>
