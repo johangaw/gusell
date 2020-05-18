@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="/css/index.css">
   <link rel="stylesheet" type="text/css" href="/css/typogrophy.css">
   <link rel="stylesheet" type="text/css" href="/css/nav.css">
+  <link rel="stylesheet" type="text/css" href="/css/toastmasters.css">
   <title>{{ block "title" . }}{{ .Page.Title }}{{ end }}</title>
 </head>
 
@@ -29,8 +30,8 @@
       </nav>
     </header>
     {{ block "main" . }}
-    <!-- The part of the page that begins to differ between templates -->
     {{ end }}
+
     {{ block "footer" . }}
     <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
     {{ end }}

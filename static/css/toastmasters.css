@@ -1,0 +1,40 @@
+.toastmaster-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.toastmaster {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.toastmaster :last-child {
+  margin: 16px 0 0 0;
+}
+
+.toastmaster-img {
+  max-width: 180px;
+  width: 50%;
+  border-radius: 50%;
+  flex-shrink: 1;
+}
+
+.toastmaster-contact {
+  display: flex;
+  align-items: center;
+  line-height: 2rem;
+}
+
+@media screen and (min-width: 412px) {
+  .toastmaster-container {
+    justify-content: space-between;
+  }
+  .toastmaster {
+    flex-direction: row;
+  }
+  .toastmaster :last-child {
+    margin: 0 0 0 16px;
+  }
+}
