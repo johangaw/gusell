@@ -4,11 +4,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 64px;
+  min-height: 84px;
 }
 
 .nav-item {
-  color: white;
   margin: 0 16px;
   list-style: none;
   font-size: 1.25rem;
@@ -16,9 +15,13 @@
 
 .nav-item a {
   text-decoration: none;
-  color: white;
+  color: var(--color-font);
 }
 
 .nav-item a:hover, .nav-item a:active, .nav-item.active a {
   color: goldenrod;
+}
+
+.nav-item.active a {
+  border-bottom: 2px solid goldenrod;
 }

@@ -8,6 +8,10 @@
   src: url("/fonts/gill-sans-mt-medium.ttf") format("truetype");
 }
 
+:root {
+  --color-font: rgb(43, 43, 43);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -16,21 +20,26 @@ body {
   margin: 0;
   font-family: 'Roboto';
   font-size: 16px;
+  color: var(--color-font);
 }
 
-.top-background {
-  background: rgb(87, 86, 86);
-  background: radial-gradient(circle, rgba(87, 86, 86, 1) 0%, rgba(14, 14, 14, 1) 100%);
-  position: absolute;
+.background-image {
+  position: fixed;
   left: 0;
-  right: 0;
-  height: 200px;
-  z-index: -1;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+  background-image: url("/img/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container {
   max-width: 1024px;
   margin: 0 auto;
+  background-color: transparent;
 }
 
 .main {
@@ -52,6 +61,7 @@ body {
 
 .headline-wrapper p {
   color: goldenrod;
+  font-size: 1.25rem;
   margin: 8px 0;
 }
 
