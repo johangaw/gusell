@@ -14,7 +14,7 @@
   font-size: 1.25rem;
 }
 
-.nav-item a:visited {
+.nav-item a {
   text-decoration: none;
   color: white;
 }
