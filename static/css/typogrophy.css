@@ -1,4 +1,10 @@
 h1 {
-  font-size: 8rem;
-  font-family: 'Brotherhood Script';
+  font-family: "Brotherhood Script";
+  font-size: 6rem;
+}
+
+@media screen and (min-width: 520px) {
+  h1 {
+    font-size: 8rem;
+  }
 }
