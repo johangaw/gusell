@@ -17,7 +17,7 @@
   <div class="container">
     <header onclick="event.stopPropagation()">
       <nav id="nav-container" class="main-nav-container">
-        <button onclick="toggleMenu()" class="menu-open-button">
+        <button onclick="openMeny()" class="menu-open-button">
           <img src="/img/menu.svg" alt="Öppna meny" class="menu-open-icon">
         </button>
         <div class="main-nav-content">
@@ -46,12 +46,14 @@
   </div>
 
   <script>
-    function toggleMenu() {
-      document.getElementById('nav-container').classList.toggle('open')
+    function closeMenu() {
+      const elem = document.getElementById('nav-container')
+      elem.classList.remove('open')
     }
 
-    function closeMenu() {
-      document.getElementById('nav-container').classList.remove('open')
+    function openMeny() {
+      const elem = document.getElementById('nav-container')
+      elem.classList.add('open')
     }
   </script>
 </body>
