@@ -8,3 +8,31 @@ h1 {
     font-size: 8rem;
   }
 }
+
+.with-side-lines {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+}
+
+.with-side-lines::after,
+.with-side-lines::before {
+  position: absolute;
+  top: 51%;
+  overflow: hidden;
+  width: 50%;
+  height: 1px;
+  content: "\a0";
+  background-color: black;
+}
+
+.with-side-lines:before {
+  margin-left: -55%;
+  text-align: right;
+}
+
+.with-side-lines:after {
+  margin-left: 5%;
+  text-align: left;
+}
