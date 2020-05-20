@@ -16,18 +16,25 @@
   <div class="background-image"></div>
   <div class="container">
     <header onclick="event.stopPropagation()">
-      <nav class="main-nav-container" id="nav-container">
-        <button onclick="toggleMenu()">Öppna</button>
-        <ul>
-          {{ $currentPage := . }}
-          {{ range .Site.Menus.main }}
-          <li class='nav-item {{ if $currentPage.IsMenuCurrent  "main" . }}active{{ end }}'>
-            <a href="{{ .URL }}">
-              {{ .Name }}
-            </a>
-          </li>
-          {{ end }}
-        </ul>
+      <nav id="nav-container" class="main-nav-container">
+        <button onclick="toggleMenu()" class="menu-open-button">
+          <img src="/img/menu.svg" alt="Öppna meny" class="menu-open-icon">
+        </button>
+        <div class="main-nav-content">
+          <button class="menu-close-button" onclick="closeMenu()">
+            <img src="/img/close.svg" alt="Stäng meny" class="menu-close-icon">
+          </button>
+          <ul>
+            {{ $currentPage := . }}
+            {{ range .Site.Menus.main }}
+            <li class='nav-item {{ if $currentPage.IsMenuCurrent  "main" . }}active{{ end }}'>
+              <a href="{{ .URL }}">
+                {{ .Name }}
+              </a>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
       </nav>
     </header>
     {{ block "main" . }}
