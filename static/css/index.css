@@ -10,6 +10,7 @@
 
 :root {
   --color-font: rgb(43, 43, 43);
+  --color-font-second: #006994;
   --phone-upper: 520px;
 }
 
@@ -48,6 +49,7 @@ body {
   background-color: white;
   margin: 0 8px;
   box-shadow: 5px 5px 11px rgb(43, 42, 42);
+  border-radius: 5px;
 }
 
 .headline-wrapper {
@@ -61,7 +63,7 @@ body {
 }
 
 .headline-wrapper p {
-  color: goldenrod;
+  color: var(--color-font-second);
   font-size: 1.25rem;
   margin: 8px 0;
 }
@@ -69,6 +71,10 @@ body {
 .main-image {
   width: 100%;
   border-radius: 50%;
+}
+
+a {
+  color: var(--color-font-second);
 }
 
 /* ========= Large screens ========= */

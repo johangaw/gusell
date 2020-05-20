@@ -67,12 +67,12 @@
 .nav-item a:hover,
 .nav-item a:active,
 .nav-item.active a {
-  color: goldenrod;
+  color: var(--color-font-second);
 }
 
 .nav-item:hover,
 .nav-item.active {
-  border-bottom-color: goldenrod;
+  border-bottom-color: var(--color-font-second);
 }
 
 /* ====== When open ======== */
