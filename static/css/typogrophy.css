@@ -9,6 +9,10 @@ h1 {
   }
 }
 
+h2 {
+  text-align: center;
+}
+
 .with-side-lines {
   position: relative;
   z-index: 1;

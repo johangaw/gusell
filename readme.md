@@ -8,7 +8,6 @@
 - Revisit heading alignment
 - Revisit spacing between text blocks
 
-- tostmasters brevid varnarda, minsta bild så det får plats
 - Byt font på texten
 - bild på boendesidan
 - Skriv om schema sidan
