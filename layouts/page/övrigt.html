@@ -1,3 +1,7 @@
+{{ define "head" }}
+<link rel="stylesheet" type="text/css" href="/css/övrigt.css">
+{{ end }}
+
 {{ define "main" }}
 <main class="main">
   <div class="headline-wrapper">
@@ -9,8 +13,16 @@
   </div>
 
   <h2>Allergi varning</h2>
-  <p>För minsta risken för ond bråd död så ber vi alla att INTE ta med snickers, kakor eller andra saker som innehåller
-    jordnötter. Tack så mycket :)</p>
+  <div class="block">
+    <div>
+      <img class="block-img" src="/img/maria.jpg" alt="">
+    </div>
+    <div class="block-info">
+      För minsta risken för ond bråd död så ber vi alla att INTE ta med snickers, kakor eller andra saker som
+      innehåller
+      jordnötter. Tack så mycket :)
+    </div>
+  </div>
 
   <h2>Klädkod</h2>
   <!-- <h3>Korta versionen</h3>
@@ -25,18 +37,26 @@
 
 
   <h2>Barn</h2>
-  <p>Målsman ansvarar för minderåriga, men alla åldrar är välkomna</p>
+  <div class="block">
+    <div>
+      <img src="/img/maria.jpg" alt="" class="block-img">
+    </div>
+    <div class="block-info">
+      Målsman ansvarar för minderåriga, men alla åldrar är välkomna
+    </div>
+  </div>
 
   <h2>Corona planen</h2>
-  <p>Eftersom det ännu inte blivit tillåtet att ha sammankomster med mer än 50 personer är det här bröllop teknisk sätt
-    uppvigling till brott (än så länge). Förhoppningsvis ser det bättre ut i september. Om inte får vi skjuta på det
-    tills nästa år, men i så fall kommer vi höra av oss.</p>
-
-  {{/*  <h2>Presenter</h2>
-  <p>Det är present nog att ni kommer och firar den här dagen tillsammans med oss.</p>  */}}
-
-
-
+  <div class="block">
+    <div>
+      <img src="/img/maria.jpg" alt="" class="block-img">
+    </div>
+    <div class="block-info">
+      M Eftersom det ännu inte blivit tillåtet att ha sammankomster med mer än 50 personer är det här bröllop teknisk
+      sätt uppvigling till brott (än så länge). Förhoppningsvis ser det bättre ut i september. Om inte får vi skjuta på
+      det tills nästa år, men i så fall kommer vi höra av oss.
+    </div>
+  </div>
 
 </main>
 {{ end }}

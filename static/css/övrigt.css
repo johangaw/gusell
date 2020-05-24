@@ -1,0 +1,12 @@
+.block {
+  display: flex;
+}
+
+.block-img {
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+.block-info {
+  padding-left: 8px;
+}
