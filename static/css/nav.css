@@ -1,38 +1,48 @@
 .main-nav-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   text-align: left;
+  background: var(--color-nav-menu);
 }
 
 .menu-open-button {
-  margin-top: 8px;
-  margin-left: 22px;
-  padding: 0;
-  border-radius: 10%;
-  background-color: white;
+  margin: 8px 0 8px 22px;
+  padding: 4px;
+  border: none;
+  width: 30px;
+  height: 30px;
+  background-color: var(--color-nav-menu);
+  border-radius: 6px;
+  box-shadow: 3px 3px 6px #93b8c4, -3px -3px 6px #c7f8ff;
+}
+
+.menu-open-button:active {
+  box-shadow: inset 3px 3px 6px #93b8c4, inset -3px -3px 6px #c7f8ff;
 }
 
 .menu-open-icon {
-  width: 20px;
-  margin: 4px;
+  width: 100%;
 }
 
 .menu-close-button {
   float: right;
-  padding: 0;
+  padding: 6px;
   background: transparent;
   border: none;
   clear: both;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.menu-close-button:active {
+  box-shadow: inset 3px 3px 6px #93b8c4, inset -3px -3px 6px #c7f8ff;
 }
 
 .menu-close-icon {
-  width: 20px;
+  width: 100%;
 }
 
 .main-nav-content {
-  background-color: white;
+  background-color: var(--color-nav-menu);
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
   left: 0;
   margin: 0;
@@ -77,10 +87,6 @@
 
 /* ====== When open ======== */
 
-.main-nav-container.open .menu-open-button {
-  display: none;
-}
-
 .main-nav-container.open .main-nav-content {
   transform: translateY(0);
 }
@@ -92,8 +98,9 @@
     display: none;
   }
   .main-nav-container {
+    background: transparent;
     left: 0;
-    padding: none;
+    padding: 0;
     position: relative;
     transform: none;
   }
