@@ -11,5 +11,4 @@
 
 - Byt font på texten
 - bild på boendesidan
-- Skriv om schema sidan
 - beskär bakgrund
