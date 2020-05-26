@@ -6,6 +6,5 @@
 - bilder till övrigt sidan
 - Update OSA email
 
-- Byt font på texten
 - bild på boendesidan
 - beskär bakgrund

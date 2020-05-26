@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: row;
   align-items: left;
+  min-width: 278px;
 }
 
 .toastmaster:first-child {
@@ -23,8 +24,8 @@
 
 .toastmaster-contact {
   display: flex;
-  align-items: center;
   line-height: 1.5rem;
+  flex-direction: column;
   margin-left: 8px;
 }
 
@@ -35,10 +36,6 @@
 
   .toastmaster {
     width: 50%;
-  }
-
-  .toastmaster :last-child {
-    margin: 0 0 0 16px;
   }
 
   .toastmaster:first-child {
