@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: "Vladimir Script";
+  src: url("/fonts/vladimir-script.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "Gill Sans MT Medium";
   src: url("/fonts/gill-sans-mt-medium.ttf") format("truetype");
 }
@@ -19,9 +24,13 @@
   box-sizing: border-box;
 }
 
+p {
+  margin-top: 0;
+}
+
 body {
   margin: 0;
-  font-family: "Roboto";
+  font-family: "Gill Sans MT Medium";
   font-size: 16px;
   color: var(--color-font);
 }
@@ -52,14 +61,15 @@ body {
 }
 
 .headline-wrapper p {
-  color: var(--color-font-second);
-  font-size: 1.25rem;
+  font-family: "Vladimir Script";
+  font-size: 1.8rem;
   margin: 8px 0;
 }
 
 .main-image {
   width: 100%;
   border-radius: 50%;
+  margin-bottom: 16px;
 }
 
 a {
