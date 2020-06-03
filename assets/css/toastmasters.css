@@ -17,6 +17,7 @@
 
 .toastmaster-img {
   max-width: 120px;
+  max-height: 120px;
   width: 50%;
   border-radius: 50%;
   flex-shrink: 1;
