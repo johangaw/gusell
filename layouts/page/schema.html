@@ -1,6 +1,11 @@
+{{ define "head" }}
+{{ $schemaStyle := resources.Get "css/schema.css" | fingerprint }}
+<link rel="stylesheet" href="{{ $schemaStyle.Permalink }}" integrity="{{ $schemaStyle.Data.Integrity }}">
+{{ end }}
+
 {{ define "main" }}
 <main class="main">
-  <div class="headline-wrapper">
+  <div class="headline-wrapper bg-violet">
     <h1>
       Schema
     </h1>
@@ -11,33 +16,46 @@
 
   <div style="height: 200px; background: gray;"></div>
 
-  <h2>15:30 Vigsel</h2>
-  <p>
-    Den borgliga vigseln kommer äga rum ute på udden söder om Gålö Havsbad. Enklaste sättet att komma dit är via en stig
-    som startar genom en båge vid parkeringen. Därefter är det grusad stig två tredjedelar av vägen ut på udden för att
-    bli vanlig stig och klippor sista tredjedelen. Vi rekommenderar således något mindre eleganta skor för den här
-    delen av dagen.
-  </p>
+  <div class="schema-container">
+
+    <h2>15:30 Vigsel</h2>
+    <p>
+      Den borgliga vigseln kommer äga rum ute på udden söder om Gålö Havsbad. Enklaste sättet att komma dit är via en
+      stig
+      som startar genom en båge vid parkeringen. Därefter är det grusad stig två tredjedelar av vägen ut på udden för
+      att
+      bli vanlig stig och klippor sista tredjedelen. Vi rekommenderar således något mindre eleganta skor för den här
+      delen av dagen.
+    </p>
 
 
-  <h2>16:30 Fest</h2>
-  <p>
-    Efter vigseln tar vi oss gemensamt upp till festlokalen, Fröbergs Loge kallad, som ligger längs vägen ner mot
-    campingen. Vi kommer börja med fördrink så om man behöver springa och hämta ett par snyggare
-    skor eller snabbt checka in så finns det lite tid nu. Kvällen fortsätter sedan med middag, dans och härligt häng med
-    skojsiga människor.
-  </p>
+    <h2>16:30 Fest</h2>
+    <p>
+      Efter vigseln tar vi oss gemensamt upp till festlokalen, Fröbergs Loge kallad, som ligger längs vägen ner mot
+      campingen. Vi kommer börja med fördrink så om man behöver springa och hämta ett par snyggare
+      skor eller snabbt checka in så finns det lite tid nu. Kvällen fortsätter sedan med middag, dans och härligt häng
+      med
+      skojsiga människor.
+    </p>
 
-  <h2>9:00-11:00 Frukost</h2>
-  <p>
-    Självförklarande rubrik :D. Dock viktigt att ni meddelar oss om ni vill ha någon frukost så att vi vet hur många vi
-    ska fixa mat åt. Och visst ja, vi äter tillsammans i festlokalen från dagen innan.
-  </p>
+    <hr class="divider">
 
-  <h2>Om det regnar...</h2>
-  <p>Vid den högst eventuella förekomsten av vatten från ovan i sådan mängd att vigsel nere vid havet inte kan komma i
-    fråga så flyttas denna del till logen alternativt trädgården utanför. Vatten resistansen hos framförallt bruden är
-    dock tämligen stor så ett paraply kan vara bra att ha med sig. Om det onämnbara ändå skulle inträffa så kommer ny
-    plats för vigseln bland annat meddelas vid början av stigen ut på udden. </p>
+    <h2>9:00 Frukost</h2>
+    <p>
+      Självförklarande rubrik :D. Dock viktigt att ni meddelar oss om ni vill ha någon frukost så att vi vet hur många
+      vi
+      ska fixa mat åt. Och visst ja, vi äter tillsammans i festlokalen från dagen innan.
+    </p>
+
+    <hr class="divider">
+
+    <h2>Om det regnar...</h2>
+    <p>Vid den högst eventuella förekomsten av vatten från ovan i sådan mängd att vigsel nere vid havet inte kan komma i
+      fråga så flyttas denna del till logen alternativt trädgården utanför. Vatten resistansen hos framförallt bruden är
+      dock tämligen stor så ett paraply kan vara bra att ha med sig. Om det onämnbara ändå skulle inträffa så kommer ny
+      plats för vigseln bland annat meddelas vid början av stigen ut på udden. </p>
+
+  </div>
+
 </main>
 {{end}}

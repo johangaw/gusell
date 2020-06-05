@@ -15,13 +15,23 @@
 
 :root {
   --color-font: rgb(43, 43, 43);
-  --color-font-second: #006994;
+  --color-font-second: gold;
   --phone-upper: 620px;
-  --color-nav-menu: lightblue;
+  --color-main: green;
+
+  --color-blue: blue;
+  --color-orange: orange;
+  --color-violet: violet;
+  --color-green: var(--color-main);
 }
 
 * {
   box-sizing: border-box;
+}
+
+img {
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  max-width: 100%;
 }
 
 p {
@@ -50,9 +60,27 @@ body {
   background-color: white;
 }
 
+.osa-section {
+  margin: 0 -16px;
+  color: var(--color-font-second);
+  background-color: var(--color-main);
+  padding: 16px;
+  text-align: center;
+}
+
+.osa-section h2 {
+  margin: 0;
+}
+
+.osa-section p:last-child {
+  margin: 0;
+}
+
 .headline-wrapper {
   margin: 0 0 32px 0;
   text-align: center;
+  padding: 16px;
+  color: var(--color-font-second);
 }
 
 .headline-wrapper h1 {
@@ -79,8 +107,29 @@ a {
 .title-and {
   margin-left: -25px;
   margin-right: -56px;
-  color: var(--color-nav-menu);
   font-weight: bold;
+}
+
+/* ========= Utils ========= */
+
+.bg-green {
+  background-color: var(--color-green);
+}
+
+.bg-blue {
+  background-color: var(--color-blue);
+}
+
+.bg-orange {
+  background-color: var(--color-orange);
+}
+
+.bg-violet {
+  background-color: var(--color-violet);
+}
+
+.p0 {
+  padding: 0;
 }
 
 /* ========= Large screens ========= */
