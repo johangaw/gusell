@@ -15,13 +15,13 @@
 
 :root {
   --color-font: rgb(43, 43, 43);
-  --color-font-second: gold;
+  --color-font-second: #bc8f66;
   --phone-upper: 620px;
-  --color-main: green;
+  --color-main: #26321c;
 
-  --color-blue: blue;
-  --color-orange: orange;
-  --color-violet: violet;
+  --color-blue: #133d4e;
+  --color-orange: #84293d;
+  --color-violet: #4f2f42;
   --color-green: var(--color-main);
 }
 
@@ -150,7 +150,7 @@ a {
     width: 100vw;
     height: 100vh;
     z-index: -1;
-    background-image: url("/img/background.jpg");
+    background-image: url("/img/background-2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

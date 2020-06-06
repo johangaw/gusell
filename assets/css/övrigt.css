@@ -3,12 +3,24 @@
   align-items: flex-start;
 }
 
+.block-img-wrapper {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 8px;
+}
+
 .block-img {
-  max-width: 100px;
-  border-radius: 50%;
-  display: block;
+  width: 100%;
 }
 
 .block-info {
   padding-left: 8px;
+}
+
+.dresscode-img {
+  padding: 8px 24px 0px 24px;
 }

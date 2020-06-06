@@ -1,10 +1,15 @@
+{{ define "head" }}
+{{ $findUsStyle := resources.Get "css/hitta-hit.css" | fingerprint }}
+<link rel="stylesheet" href="{{ $findUsStyle.Permalink }}" integrity="{{ $findUsStyle.Data.Integrity }}">
+{{ end }}
+
 {{ define "main" }}
 <main class="main">
   <div class="headline-wrapper bg-orange">
     <h1>
       Hitta hit
     </h1>
-    <p>Komsikomsi :D</p>
+    <p>Komsikomsi</p>
   </div>
 
   <p>
@@ -14,16 +19,20 @@
   </p>
 
   <p>
-    Är man mer äventyrlig så kan man också använda Stockholms Länstrafik. Då är det pendeltåg till Västrahaninge station
+    Är man mer äventyrlig så kan man också använda Stockholms Länstrafik. Då är det pendeltåg till Västerhaninge station
     och sedan buss 845 mot Skälåker som gäller. Notera dock att sista bussen därifrån går någon gång under middagen så
     man kan behöva ordna med skjuts alternativt någonstans att sova i så fall.
   </p>
 
   <p>
-    Vill man ytterligare höja graden av äventyrlighet och anlända men båt så ligger Skälåkers båtklubb precis bredvid
+    Vill man ytterligare höja graden av äventyrlighet och anlända med båt så ligger Skälåkers båtklubb precis bredvid
     campingen. De har ingen reguljär gästhamn men för en natt kan det nog gå att ordna. Kontakta i så fall brudparet i
     god tid innan bröllopet för besked.
   </p>
+
+  <div class="bottom-img-wrapper">
+    <img src="/img/kotte.png" class="bottom-img" alt="">
+  </div>
 
 </main>
 {{ end }}

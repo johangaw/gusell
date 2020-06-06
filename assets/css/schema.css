@@ -18,3 +18,8 @@
 .schema-container h2 {
   margin: 0;
 }
+
+.map {
+  /* margin: 0 -32px 32px -32px; */
+  margin-bottom: 32px;
+}

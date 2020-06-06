@@ -11,11 +11,11 @@
   height: 30px;
   background-color: var(--color-main);
   border-radius: 6px;
-  box-shadow: 3px 3px 6px #93b8c4, -3px -3px 6px #c7f8ff;
+  box-shadow: 3px 3px 6px #202b18, -3px -3px 6px #2c3a20;
 }
 
 .menu-open-button:active {
-  box-shadow: inset 3px 3px 6px #93b8c4, inset -3px -3px 6px #c7f8ff;
+  box-shadow: inset 3px 3px 6px #202b18, inset -3px -3px 6px #2c3a20;
 }
 
 .menu-open-icon {
@@ -34,7 +34,7 @@
 }
 
 .menu-close-button:active {
-  box-shadow: inset 3px 3px 6px #93b8c4, inset -3px -3px 6px #c7f8ff;
+  box-shadow: inset 3px 3px 6px #202b18, inset -3px -3px 6px #2c3a20;
 }
 
 .menu-close-icon {
@@ -69,7 +69,7 @@
 
 .nav-item a {
   text-decoration: none;
-  color: var(--color-font);
+  color: white;
   display: block;
 }
 
