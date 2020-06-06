@@ -1,6 +1,6 @@
 {{ define "head"}}
 {{ $toastmastersStyle := resources.Get "css/toastmasters.css" | fingerprint }}
-<link rel="stylesheet" href="{{ $toastmastersStyle.Permalink }}" integrity="{{ $toastmastersStyle.Data.Integrity }}">
+<link rel="stylesheet" href="{{ $toastmastersStyle.RelPermalink }}" integrity="{{ $toastmastersStyle.Data.Integrity }}">
 {{ end }}
 
 {{ define "main" }}

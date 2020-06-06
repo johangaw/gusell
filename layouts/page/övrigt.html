@@ -1,6 +1,6 @@
 {{ define "head" }}
 {{ $otherStyle := resources.Get "css/övrigt.css" | fingerprint }}
-<link rel="stylesheet" href="{{ $otherStyle.Permalink }}" integrity="{{ $otherStyle.Data.Integrity }}">
+<link rel="stylesheet" href="{{ $otherStyle.RelPermalink }}" integrity="{{ $otherStyle.Data.Integrity }}">
 {{ end }}
 
 {{ define "main" }}

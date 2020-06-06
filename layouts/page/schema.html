@@ -1,6 +1,6 @@
 {{ define "head" }}
 {{ $schemaStyle := resources.Get "css/schema.css" | fingerprint }}
-<link rel="stylesheet" href="{{ $schemaStyle.Permalink }}" integrity="{{ $schemaStyle.Data.Integrity }}">
+<link rel="stylesheet" href="{{ $schemaStyle.RelPermalink }}" integrity="{{ $schemaStyle.Data.Integrity }}">
 {{ end }}
 
 {{ define "main" }}

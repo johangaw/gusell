@@ -9,9 +9,9 @@
   {{ $indexStyle := resources.Get "css/index.css" | fingerprint }}
   {{ $typogrophyStyle := resources.Get "css/typogrophy.css" | fingerprint }}
   {{ $navStyle := resources.Get "css/nav.css" | fingerprint }}
-  <link rel="stylesheet" href="{{ $indexStyle.Permalink }}" integrity="{{ $indexStyle.Data.Integrity }}">
-  <link rel="stylesheet" href="{{ $typogrophyStyle.Permalink }}" integrity="{{ $typogrophyStyle.Data.Integrity }}">
-  <link rel="stylesheet" href="{{ $navStyle.Permalink }}" integrity="{{ $navStyle.Data.Integrity }}">
+  <link rel="stylesheet" href="{{ $indexStyle.RelPermalink }}" integrity="{{ $indexStyle.Data.Integrity }}">
+  <link rel="stylesheet" href="{{ $typogrophyStyle.RelPermalink }}" integrity="{{ $typogrophyStyle.Data.Integrity }}">
+  <link rel="stylesheet" href="{{ $navStyle.RelPermalink }}" integrity="{{ $navStyle.Data.Integrity }}">
 
   {{ block "head" . }}{{ end }}
   <title>{{ block "title" . }}{{ .Page.Title }}{{ end }}</title>
