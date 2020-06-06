@@ -4,69 +4,72 @@
 {{ end }}
 
 {{ define "main" }}
-<main class="main">
-  <div class="headline-wrapper">
-    <h1>
-      Övrigt
-    </h1>
+<div class="headline-wrapper">
+  <h1>
+    Övrigt
+  </h1>
 
-    <p>Övriga saker som kan vara bra att veta och som vi inte fick med någon annanstans</p>
+  <p>Övriga saker som kan vara bra att veta och som vi inte fick med någon annanstans</p>
+</div>
+
+<h2>Allergi varning</h2>
+<div class="block">
+  <div class="block-img-wrapper bg-blue">
+    <img class="block-img" src="/img/kotte.png" alt="">
   </div>
-
-  <h2>Allergi varning</h2>
-  <div class="block">
-    <div class="block-img-wrapper bg-blue">
-      <img class="block-img" src="/img/kotte.png" alt="">
-    </div>
-    <div class="block-info">
-      För att minsta risken för ond bråd död så ber vi alla att INTE ta med snickers, kakor eller andra saker som
-      innehåller
-      jordnötter. Tack så mycket :)
-    </div>
+  <div class="block-info">
+    För att minsta risken för ond bråd död så ber vi alla att INTE ta med snickers, kakor eller andra saker som
+    innehåller
+    jordnötter. Tack så mycket :)
   </div>
+</div>
 
-  <h2>Barn</h2>
-  <div class="block">
-    <div class="block-img-wrapper bg-violet">
-      <img src="/img/kotte.png" alt="" class="block-img">
-    </div>
-    <div class="block-info">
-      Målsman ansvarar för minderåriga, men alla åldrar är välkomna
-    </div>
+<h2>Barn</h2>
+<div class="block">
+  <div class="block-img-wrapper bg-violet">
+    <img src="/img/kotte.png" alt="" class="block-img">
   </div>
-
-  <h2>Corona planen</h2>
-  <div class="block">
-    <div class="block-img-wrapper bg-green">
-      <img src="/img/kotte.png" alt="" class="block-img">
-    </div>
-    <div class="block-info">
-      Eftersom det ännu inte blivit tillåtet att ha sammankomster med mer än 50 personer är det här bröllopet teknisk
-      sätt uppvigling till brott (än så länge). Förhoppningsvis ser det bättre ut i september. Om inte får vi skjuta på
-      det tills nästa år, men i så fall kommer vi höra av oss.
-    </div>
+  <div class="block-info">
+    Målsman ansvarar för minderåriga, men alla åldrar är välkomna
   </div>
+</div>
 
-  <h2>Klädkod</h2>
-  <div class="block">
-    <div class="block-img-wrapper bg-orange">
-      <img src="/img/kotte.png" alt="" class="block-img">
-    </div>
-    <div class="block-info">
-      Festfin klädsel i valfria färger. Byxor, klänning och kjolar bör minst täcka knät.
-      <br>
-      Självklart får kvinnor ha kostym och herrar ha kjol om de vill.
+<h2>Corona planen</h2>
+<div class="block">
+  <div class="block-img-wrapper bg-green">
+    <img src="/img/kotte.png" alt="" class="block-img">
+  </div>
+  <div class="block-info">
+    Eftersom det ännu inte blivit tillåtet att ha sammankomster med mer än 50 personer är det här bröllopet teknisk
+    sätt uppvigling till brott (än så länge). Förhoppningsvis ser det bättre ut i september. Om inte får vi skjuta på
+    det tills nästa år, men i så fall kommer vi höra av oss.
+  </div>
+</div>
+
+<h2>Klädkod</h2>
+<div class="block">
+  <div class="block-img-wrapper bg-orange">
+    <img src="/img/kotte.png" alt="" class="block-img">
+  </div>
+  <div class="block-info">
+    Festfin klädsel i valfria färger. Byxor, klänning och kjolar bör minst täcka knät.
+    <br>
+    Självklart får kvinnor ha kostym och herrar ha kjol om de vill.
+    <div class="dresscode-wrapper">
       <img class="dresscode-img" src="/img/dresscode.png" alt="">
     </div>
   </div>
+</div>
 
-
-  <!-- <script>
+<!-- <script>
     for (let item of document.getElementsByClassName('block-img')) {
       const rotation = Math.round(Math.random() * 360)
       console.log(item, rotation);
       item.style.transform = 'rotate(' + rotation + 'deg)'
     }
   </script> -->
-</main>
+{{ end }}
+
+{{ define "footer" }}
+<!-- empty -->
 {{ end }}

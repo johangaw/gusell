@@ -107,7 +107,6 @@ a {
 .title-and {
   margin-left: -25px;
   margin-right: -56px;
-  font-weight: bold;
 }
 
 /* ========= Utils ========= */
@@ -130,6 +129,15 @@ a {
 
 .p0 {
   padding: 0;
+}
+
+.footer-img-wrapper {
+  padding: 32px 0;
+  text-align: center;
+}
+
+.footer-img {
+  width: 100px;
 }
 
 /* ========= Large screens ========= */

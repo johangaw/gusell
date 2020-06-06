@@ -42,12 +42,22 @@
         </div>
       </nav>
     </header>
-    {{ block "main" . }}
-    {{ end }}
 
-    {{ block "footer" . }}
-    <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
-    {{ end }}
+    <main class="main">
+
+      {{ block "main" . }}
+      {{ end }}
+
+      {{ block "footer" . }}
+      <footer>
+        <div class="footer-img-wrapper">
+          <img src="/img/kotte.png" class="footer-img" alt="">
+        </div>
+      </footer>
+      {{ end }}
+
+    </main>
+
   </div>
 
   <script>

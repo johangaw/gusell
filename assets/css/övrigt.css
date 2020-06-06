@@ -21,6 +21,12 @@
   padding-left: 8px;
 }
 
+.dresscode-wrapper {
+  text-align: center;
+}
+
 .dresscode-img {
   padding: 8px 24px 0px 24px;
+  margin-bottom: 32px;
+  max-width: 270px;
 }
