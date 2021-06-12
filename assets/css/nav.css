@@ -11,11 +11,11 @@
   height: 30px;
   background-color: var(--color-main);
   border-radius: 6px;
-  box-shadow: 3px 3px 6px #202b18, -3px -3px 6px #2c3a20;
+  box-shadow: 3px 3px 6px #432838, -3px -3px 6px #5b364c;
 }
 
 .menu-open-button:active {
-  box-shadow: inset 3px 3px 6px #202b18, inset -3px -3px 6px #2c3a20;
+  box-shadow: inset 3px 3px 6px #432838, inset -3px -3px 6px #5b364c;
 }
 
 .menu-open-icon {
@@ -98,7 +98,6 @@
     display: none;
   }
   .main-nav-container {
-    background: transparent;
     left: 0;
     padding: 0;
     position: relative;

@@ -17,12 +17,13 @@
   --color-font: rgb(43, 43, 43);
   --color-font-second: #bc8f66;
   --phone-upper: 620px;
-  --color-main: #26321c;
 
   --color-blue: #133d4e;
   --color-orange: #84293d;
   --color-violet: #4f2f42;
-  --color-green: var(--color-main);
+  --color-green: #26321c;
+
+  --color-main: var(--color-violet);
 }
 
 * {
@@ -63,7 +64,7 @@ body {
 .osa-section {
   margin: 0 -16px;
   color: var(--color-font-second);
-  background-color: var(--color-main);
+  background-color: var(--color-blue);
   padding: 16px;
   text-align: center;
 }
@@ -146,7 +147,7 @@ a {
   .main {
     padding: 32px;
     box-shadow: 5px 5px 11px rgb(43, 42, 42);
-    border-radius: 5px;
+    border-radius: 0 0 5px 5px;
   }
 
   .osa-section {
