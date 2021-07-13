@@ -23,10 +23,10 @@
 
 .dresscode-wrapper {
   text-align: center;
+  max-width: 270px;
 }
 
 .dresscode-img {
   padding: 8px 24px 0px 24px;
   margin-bottom: 32px;
-  max-width: 270px;
 }
