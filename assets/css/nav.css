@@ -93,7 +93,7 @@
 
 /* ========= Large screens ========= */
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 640px) {
   .main-nav-container button {
     display: none;
   }

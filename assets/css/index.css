@@ -16,7 +16,7 @@
 :root {
   --color-font: rgb(43, 43, 43);
   --color-font-second: #bc8f66;
-  --phone-upper: 620px;
+  --phone-upper: 640px;
 
   --color-blue: #133d4e;
   --color-orange: #84293d;
@@ -143,7 +143,7 @@ a {
 
 /* ========= Large screens ========= */
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 640px) {
   .main {
     padding: 32px;
     box-shadow: 5px 5px 11px rgb(43, 42, 42);

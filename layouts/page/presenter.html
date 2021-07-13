@@ -1,0 +1,95 @@
+{{ define "head" }}
+{{ $otherStyle := resources.Get "css/presenter.css" | fingerprint }}
+<link rel="stylesheet" href="{{ $otherStyle.RelPermalink }}" integrity="{{ $otherStyle.Data.Integrity }}">
+{{ end }}
+
+
+{{ define "main" }}
+
+<div class="headline-wrapper">
+  <h1>Presenter</h1>
+
+  <p>Högs frivilligt men alltid välkommet</p>
+</div>
+
+<p>
+  För oss är det en tillräcklig present att ni kommer! :)
+</p>
+
+<p>
+  Men vill man gärna ge något mer så kan man välja något ur listan nedan.
+  Vi är medvetna om att de kostar en del så vill man får man gärna gå ihop ett par stycken eller köppa udda glas.
+</p>
+
+<p>
+  För att undvika att alla ger bort det som ligger överst i listan så ber vi er kolla med våra <a href="/#toastmasters">toastmasters</a> innan ni
+  köper något. De har lovat att hålla lite koll så att det blir lite spridning.
+</p>
+
+<p>
+  Slutligen, om man tycker det är jättetråkigt eller stökigt att ge bort glas men ändå vill ge något så kan man skänka
+  bidrag till vår bröllopsresa.
+  Swisha i så fall till någon av oss så lovar vi att inte kolla fören efter festen.
+  Då blir det en överraskning precis som ett vanligt paket. Skriv också gärna vem det är i från :)
+</p>
+
+
+
+<a href="https://orrefors.se/products/intermezzo-bla-champagne-26cl-20cl/" target="_blank">
+  <div class="block">
+    <div class="block-img-wrapper">
+      <img src="/img/6257414_intermezzo.jpg" alt="" class="block-img">
+    </div>
+    <div class="block-info">
+      intermezzo blå champagne 26cl (20cl)
+      <br>
+      6st
+    </div>
+  </div>
+</a>
+
+<a href="https://orrefors.se/products/intermezzo-bla-tumbler-25cl-22cl/" target="_blank">
+  <div class="block">
+    <div class="block-img-wrapper">
+      <img class="block-img" src="/img/6257432_intermezzo.jpg" alt="">
+    </div>
+    <div class="block-info">
+      intermezzo blå tumbler 25cl (22cl)
+      <br>
+      7st
+    </div>
+  </div>
+</a>
+
+<a href="https://orrefors.se/products/intermezzo-bla-martini-25cl-21cl/" target="_blank">
+  <div class="block">
+    <div class="block-img-wrapper">
+      <img class="block-img" src="/img/6257455_intermezzo.jpg" alt="">
+    </div>
+    <div class="block-info">
+      intermezzo blå martini 25cl (21cl)
+      <br>
+      8st
+    </div>
+  </div>
+</a>
+
+<a href="https://orrefors.se/products/intermezzo-snaps-6cl-6cl/" target="_blank">
+  <div class="block">
+    <div class="block-img-wrapper">
+      <img class="block-img" src="/img/6257405_intermezzo.jpg" alt="">
+    </div>
+    <div class="block-info">
+      intermezzo snaps 6cl (6cl)
+      <br>
+      12st
+    </div>
+  </div>
+</a>
+
+
+{{ end }}
+
+{{ define "footer" }}
+<!-- empty -->
+{{ end }}

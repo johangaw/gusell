@@ -1,3 +1,13 @@
+
+
 ## TODO
 
-- Kotte längs ner på hitta hit
+- Present lista => finalize and update content
+
+
+## Development
+
+Run development server
+```
+hugo server
+```

@@ -1,0 +1,27 @@
+.gifts-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px;
+}
+
+.block-img-wrapper {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
+.block-img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.block-info {
+  padding-left: 16px;
+}
