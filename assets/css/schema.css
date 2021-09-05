@@ -1,4 +1,5 @@
 .schema-container {
+  margin-top: 32px;
   display: grid;
   grid-template-columns: 100px auto;
   row-gap: 32px;
@@ -20,5 +21,7 @@
 }
 
 .map {
-  margin-bottom: 32px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  grid-column-end: span 2;
 }
